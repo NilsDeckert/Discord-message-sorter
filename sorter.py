@@ -89,6 +89,9 @@ if user_input in server_list:
         for i in server_dict[user_input]:
             os.replace(my_path + "/"+ i, newpath + "/" + i)
             print("moved: " + i)
+
+        print("Done")
+        quit = input("Press enter to quit")
     else:
         print("Directory already exists: " + newpath)
 else:
