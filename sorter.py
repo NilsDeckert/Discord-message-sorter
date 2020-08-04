@@ -85,7 +85,8 @@ if user_input in server_list:
     newpath = os.path.join(my_path, new_input)
     while not os.path.exists(newpath):
         os.makedirs(newpath)
-        print("new path: " + newpath + "/n")
+        print("new path: " + newpath)
+        print("")
         for i in server_dict[user_input]:
             os.replace(my_path + "/"+ i, newpath + "/" + i)
             print("moved: " + i)
