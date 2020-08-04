@@ -83,7 +83,7 @@ if user_input in server_list:
     print("")
 
     newpath = os.path.join(my_path, new_input)
-    while not os.path.exists(newpath):
+    if not os.path.exists(newpath):
         os.makedirs(newpath)
         print("new path: " + newpath)
         print("")
